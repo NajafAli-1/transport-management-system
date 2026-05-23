@@ -4,7 +4,7 @@
 using namespace std;
 
 class User{
-private:
+protected:
     string name;
     int ID;
     string passward;
@@ -14,14 +14,16 @@ public:
 
         cout<<"Enter name: ";
         getline(cin,name);
-        //cin.ignore();
+        
+
+        cout<<"Enter passward: ";
+        getline(cin,passward);
         
         cout<<"Enter ID: ";
         cin>>ID;
         cin.ignore();
         
-        cout<<"Enter passward: ";
-        getline(cin,passward);
+       
         
 
     }

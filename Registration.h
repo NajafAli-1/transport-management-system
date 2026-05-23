@@ -29,7 +29,7 @@ public:
         if(choise==1){
             cout<<"Student Registration "<<endl;
             Student s;
-            s.Info();
+            s.INfo();
 
         }
         else if(choise==2){
