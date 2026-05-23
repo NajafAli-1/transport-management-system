@@ -1,4 +1,7 @@
+#pragma once
 #include<iostream>
+#include "ViewRoute.h"
+#include "ApplyTransport.h"
 
 using namespace std;
 
@@ -20,10 +23,12 @@ public:
         cin>>choice;
 
         if(choice==1){
-            
+            ViewRoute V;
+            V.Display();
         }
         else if(choice==2){
-
+            ApplyTransport AT;
+            AT.Apply();
         }
         else if(choice==3){
 

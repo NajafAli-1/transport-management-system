@@ -1,0 +1,39 @@
+========================
+| Route 1              |
+|--> Harbsnspura       |
+|--> Madina Town       |
+|--> Taj Bagh          |
+|--> Fateh Garh        |
+|--> New Pull          |
+|--> Lal Pul           |
+|--> Mughal Pura       |
+|--> Dharam Pura       |
+|--> New Campus        |
+|Distance ---> 30 Km   |
+========================
+========================
+| Route 2              |
+|--> Nishtar Colony    |
+|--> Chungi Amarsudu   |
+|--> General Hospital  |
+|--> Defence morr      |
+|--> Fibous Market     |
+|--> Kalma Chowk       |
+|--> Ichra             |
+|--> Qartba Chowk      |
+|--> New Campus        |
+|Distance ---> 37 Km   |
+========================
+========================
+| Route 3              |
+|--> Muslim Town       |
+|--> Naqsha Stop       |
+|--> Baikhe wala       |
+|--> Raza Block        |
+|--> Wahdat Road       |
+|--> Sabza Zar         |
+|--> Babu Sabu         |
+|--> Shadhra Station   |
+|--> New Campus        |
+|Distance ---> 37 Km   |
+========================
