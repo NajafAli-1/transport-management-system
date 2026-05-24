@@ -1,10 +1,14 @@
 #include<iostream>
+#include "AddVehicle.h"
+#include "RemoveTransport.h"
 
 using namespace std;
 
+
+
 class AdminPanel{
 private:
-
+    int selection;
 public:
     void Display() {
         cout<<"=============Admin Menu============"<<endl;
@@ -16,5 +20,30 @@ public:
         cout<<"|        6. Save Data             |"<<endl;
         cout<<"|        7. Logout                |"<<endl;
         cout<<"|_________________________________|"<<endl;
+        cin>>selection;
+
+        if(selection==1){
+            AddVehicle V1;
+            V1.Add();
+        }
+        else if(selection==2){
+            RemoveTransport rt;
+            rt.remove();
+        }
+        else if(selection==3){
+            
+        }
+        else if(selection==4){
+            
+        }
+        else if(selection==5){
+            
+        }
+        else if(selection==6){
+            
+        }
+        else if(selection==7){
+            
+        }
     }
 };

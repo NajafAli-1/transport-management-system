@@ -1,12 +1,14 @@
 #pragma once
 #include<iostream>
 #include "ViewRoute.h"
-#include "StudentPanel.h"
+
 
 using namespace std;
 
 int select;
 bool again;
+
+class StudentPanel;
 
 class ApplyTransport{
 protected:
@@ -42,8 +44,7 @@ public:
                 Apply();
             }
             else{
-                StudentPanel s1;            // Here is the problem
-                s1.Display();
+                
             }
         }
         
