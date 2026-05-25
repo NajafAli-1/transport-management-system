@@ -1,6 +1,7 @@
 #include<iostream>
 #include "AddVehicle.h"
 #include "RemoveTransport.h"
+#include "ViewApplications.h"
 
 using namespace std;
 
@@ -11,6 +12,8 @@ private:
     int selection;
 public:
     void Display() {
+        while(true){
+
         cout<<"=============Admin Menu============"<<endl;
         cout<<"|        1. Add vehicle           |"<<endl;
         cout<<"|        2. Remove vehicle        |"<<endl;
@@ -31,7 +34,8 @@ public:
             rt.remove();
         }
         else if(selection==3){
-            
+            ViewApplication VA;
+            VA.view();
         }
         else if(selection==4){
             
@@ -45,5 +49,6 @@ public:
         else if(selection==7){
             
         }
+      }
     }
 };

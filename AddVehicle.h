@@ -16,7 +16,7 @@ protected:
 
 public:
     void Add(){
-        ofstream file("AddVehicle.txt");
+        ofstream file("AddVehicle.txt",ios::app);
 
         
         cout<<"How many vehicle do you want to add: ";

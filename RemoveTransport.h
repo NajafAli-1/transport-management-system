@@ -9,17 +9,21 @@ using namespace std;
 
 class RemoveTransport{
 private:
-vector<string> name;
-vector<string> bustype;
-vector<int> capacity;
+
+    vector<string> name;
+    vector<string> bustype;
+    vector<int> capacity;
 
 public:
     void remove(){
         AddVehicle A;
 
         ifstream file("AddVehicle.txt");
-        string n,b,c_str;
-        int c;
+        ofstream tempfile("Tempfile.txt");
+        
+        string remove1;
+        string n,b,ty,na,c_str,ca_str;
+        int c,ca;
 
         while(getline(file,n) && getline(file,b) && getline(file,c_str)){
             name.push_back(n);
@@ -27,7 +31,7 @@ public:
             capacity.push_back(stoi(c_str));
         }
 
-        file.close();
+        
 
 
         for(int i = 0; i < name.size(); i++){
@@ -36,5 +40,24 @@ public:
             cout << "Capacity: " << capacity[i] << endl;
             cout << "-------------------" << endl;
         }
+
+        cout<<"Write the name of a transport you want to remove: ";
+        cin>>remove1;
+
+        while(getline(file,na)){
+            getline(file,ty);
+            getline(file,ca_str);
+
+            if(remove1 != na){
+                tempfile<<na<<endl;
+                tempfile<<ty<<endl;
+                tempfile<<ca<<endl;
+            }
+        }
+
+        
+
+        file.close();
+        tempfile.close();
     }
 };

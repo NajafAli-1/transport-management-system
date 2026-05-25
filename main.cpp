@@ -30,7 +30,6 @@ int main(){
         
     }
     else if(choice==2){
-        
         Login log;
         log.detail();
     }

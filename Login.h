@@ -11,8 +11,8 @@ int choose;
 
 class Login{
 private:
-    string inputname;
-    string inputpass;
+    string inputname,storename;
+    string inputpass,storepass;
     string Role;
     string filename;
     string filepass;
@@ -98,5 +98,11 @@ public:
         }
 
         
+    }
+
+    void store(){
+        storename=inputname;
+        storepass=inputpass;
+        cout<<"Name: "<<storename<<endl;
     }
 };
