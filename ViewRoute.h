@@ -53,6 +53,7 @@ public:
         cout<<"|Distance ---> 37 Km   |"<<endl;
         cout<<"========================"<<endl;
 
+        file<<"1"<<endl;
         file<<"========================"<<endl;                 //Storing data into the file
         file<<"| Route 1              |"<<endl;
         file<<"|--> Harbsnspura       |"<<endl;
@@ -67,6 +68,7 @@ public:
         file<<"|Distance ---> 30 Km   |"<<endl;
         file<<"========================"<<endl;
 
+        file<<"2"<<endl;
         file<<"========================"<<endl;
         file<<"| Route 2              |"<<endl;
         file<<"|--> Nishtar Colony    |"<<endl;
@@ -81,6 +83,7 @@ public:
         file<<"|Distance ---> 37 Km   |"<<endl;
         file<<"========================"<<endl;
 
+        file<<"3"<<endl;
         file<<"========================"<<endl;
         file<<"| Route 3              |"<<endl;
         file<<"|--> Muslim Town       |"<<endl;

@@ -9,10 +9,7 @@ using namespace std;
 class AddVehicle{
 protected:
 
-    string name;
     int count;
-    string bustype;
-    string store;
 
 public:
     void Add(){
@@ -28,7 +25,7 @@ public:
         vector<int> capacity(count);
 
         for(int i=0; i<count; i++){
-            cout<<"Route name "<<i+1<<": ";
+            cout<<"Vehicle name "<<i+1<<": ";
             getline(cin,name[i]);
 
             cout<<"Bus type "<<i+1<<": ";

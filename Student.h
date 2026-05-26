@@ -1,3 +1,4 @@
+#pragma once
 #include<iostream>
 #include<fstream>
 
@@ -23,8 +24,7 @@ public:
         cout<<"Enter Department: ";
         getline(cin,department);
 
-        cout<<"Enter your role (Student/Admin): ";
-        getline(cin,Role);
+        Role="Student";
 
         file<<name<<endl;
         file<<passward<<endl;
@@ -34,6 +34,8 @@ public:
         file<<Role<<endl;
 
         file.close();
+
+        cout<<"Student egistration successfull!!!!"<<endl;
     }
 };
 
