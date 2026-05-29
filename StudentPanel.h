@@ -46,7 +46,8 @@ public:
                 
             }
             else if(choice==4){
-                
+                ViewBill VB(studentName, studentID);
+                VB.View();
             }
             else if(choice==5){
                 

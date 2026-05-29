@@ -1,0 +1,12 @@
+=========================
+Student Name : Najaf Ali
+Student ID   : 12345
+Applied Route: 1
+Status       : Approved
+=========================
+=========================
+Student Name : Najaf Ali
+Student ID   : 12345
+Applied Route: 2
+Status       : Pending
+=========================

@@ -1,0 +1,7 @@
+=========================
+Student Name : Najaf Ali
+Student ID   : 12345
+Route        : 1
+Monthly Bill : Rs. 3000/month
+Status       : Approved
+=========================
