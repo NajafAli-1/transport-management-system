@@ -26,24 +26,18 @@ private:
 
         string line;
         while(getline(file, line)){
-            // Each record:
-            // =========================
-            // Student Name : John
-            // Student ID   : 123
-            // Applied Route: 1
-            // Status       : Pending
-            // =========================
+            
             if(line.find("=====") != string::npos){
                 Application a;
                 string sName, sID, sRoute, sStatus;
 
-                getline(file, sName);           // "Student Name : John"
-                getline(file, sID);             // "Student ID   : 123"
-                getline(file, sRoute);          // "Applied Route: 1"
-                getline(file, sStatus);         // "Status       : Pending"
-                getline(file, line);            // closing "===..."
+                getline(file, sName);           
+                getline(file, sID);            
+                getline(file, sRoute);          
+                getline(file, sStatus);         
+                getline(file, line);            
 
-                // Extract values after ": "
+                
                 auto extract = [](const string& s) -> string {
                     size_t pos = s.find(": ");
                     if(pos == string::npos) return "";
@@ -62,7 +56,7 @@ private:
 
     // Save all applications back to ApplyTransport.txt
     void saveApplications(){
-        ofstream file("ApplyTransport.txt");    // overwrite
+        ofstream file("ApplyTransport.txt");    
         for(auto& a : apps){
             file<<"========================="<<endl;
             file<<"Student Name : "<<a.studentName<<endl;

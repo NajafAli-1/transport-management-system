@@ -25,7 +25,7 @@ public:
         vector<int> capacity(count);
 
         for(int i=0; i<count; i++){
-            cout<<"Vehicle name "<<i+1<<": ";
+            cout<<"Driver name "<<i+1<<": ";
             getline(cin,name[i]);
 
             cout<<"Bus type "<<i+1<<": ";
@@ -40,7 +40,7 @@ public:
             cout<<endl;
             cout<<"========================================="<<endl;
             cout<<"    ---------ROUTE DETAIL---------       "<<endl;
-            cout<<""<<i+1<<". Route "<<i+1<<" name: "<<name[i]<<endl;
+            cout<<""<<i+1<<". Driver name: "<<name[i]<<endl;
             cout<<"   Bus type "<<": "<<bustype[i]<<endl;
             cout<<"   Capacity "<<": "<<capacity[i]<<endl;
             cout<<"=========================================="<<endl;

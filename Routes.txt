@@ -6740,3 +6740,10 @@
 |--> Rana Town
 |Distance ---> 20 Km   |
 ========================
+========================
+| Main Campus              |
+|--> Azadi Chock
+|--> Nizai metro bus stop
+|--> Shadhra
+|Distance ---> 20 Km   |
+========================

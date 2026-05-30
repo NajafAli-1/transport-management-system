@@ -1,3 +1,19 @@
+==========================================
+  UNIVERSITY TRANSPORT MANAGEMENT SYSTEM 
+           FULL SYSTEM REPORT            
+==========================================
+
+-- REGISTERED STUDENTS --
+1. Najaf Ali | ID: 12345 | Roll: 2025-AI-494 | Dept: Artificial Intelligence
+
+-- REGISTERED ADMINS --
+1. Najaf  | ID: 52475 | Email: najaf@gmail.com
+2. Najaf ALI | ID: 524752 | Email: najaf@gmail.com
+
+-- AVAILABLE VEHICLES --
+1. Kamaran | Type: Bus | Capacity: 50
+
+-- AVAILABLE ROUTES --
 1
 ========================
 | Route 1              |
@@ -40,3 +56,15 @@
 |--> New Campus        |
 |Distance ---> 37 Km   |
 ========================
+
+-- TRANSPORT APPLICATIONS --
+=========================
+Student Name : Najaf Ali
+Student ID   : 12345
+Applied Route: 3
+Status       : Approved
+=========================
+
+-- GENERATED BILLS --
+
+==========================================

@@ -5,6 +5,8 @@
 #include "ApplyTransport.h"
 #include "ViewRoute.h"
 #include "ViewBill.h"
+#include "CancelRegistration.h"
+#include "ViewRegistration.h"
 
 using namespace std;
 
@@ -42,7 +44,8 @@ public:
                 AT.Apply(studentName, studentID);
             }
             else if(choice==3){
-                
+                ViewMyRegistration VA;
+                VA.View(studentName,studentID);
                 
             }
             else if(choice==4){
@@ -50,7 +53,8 @@ public:
                 VB.View();
             }
             else if(choice==5){
-                
+                CancelRegistration CR;
+                CR.Cancel(studentName, studentID);
 
             }
             else if(choice==6){

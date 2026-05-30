@@ -42,40 +42,43 @@ public:
         for(int i=0; i<(int)names.size(); i++){
             cout<<"========================================="<<endl;
             cout<<"    ---------VEHICLE DETAIL---------     "<<endl;
-            cout<<i+1<<". Vehicle name : "<<names[i]<<endl;
+            cout<<i+1<<". Driver name : "<<names[i]<<endl;
             cout<<"   Bus type     : "<<bustypes[i]<<endl;
             cout<<"   Capacity     : "<<capacities[i]<<endl;
             cout<<"=========================================="<<endl;
         }
 
-        // ── Step 3: Ask which vehicle to remove ──
-        string target;
-        cout<<"\nEnter the vehicle name to remove: ";
-        getline(cin, target);
+        // ── Step 3: Ask which vehicle number to remove ──
+        int choice;
+        cout << "\nEnter vehicle number to remove: ";
+        cin >> choice;
 
-        // ── Step 4: Rewrite AddVehicle.txt without the removed entry ──
-        bool found = false;
-        ofstream out("AddVehicle.txt");          // overwrite (no ios::app)
-
-        for(int i=0; i<(int)names.size(); i++){
-            if(names[i] == target){
-                found = true;                    // skip this entry
-            } else {
-                out<<names[i]<<endl;
-                out<<bustypes[i]<<endl;
-                out<<capacities[i]<<endl;
-            }
+        if(choice < 1 || choice > names.size()){
+        cout << "Invalid vehicle number!" << endl;
+        return;
         }
+
+        // ── Step 4: Rewrite AddVehicle.txt without the selected entry ──
+        ofstream out("AddVehicle.txt");
+
+        for(int i = 0; i < names.size(); i++){
+            if(i == choice - 1){
+            continue;   // Skip selected vehicle
+        }
+
+        out << names[i] << endl;
+        out << bustypes[i] << endl;
+        out << capacities[i] << endl;
+        }
+
         out.close();
 
-        if(found)
-            cout<<"Vehicle '"<<target<<"' removed successfully!"<<endl;
-        else
-            cout<<"Vehicle '"<<target<<"' not found."<<endl;
-    }
+        cout << "Vehicle " << choice << " removed successfully!" << endl;
 
-    // ── Bonus: call AddVehicle::Add() directly from here ──
-    void addNew(){
-        Add();
+        
     }
+    // ── Bonus: call AddVehicle::Add() directly from here ──
+    // void addNew(){
+    //     Add();
+    // }
 };

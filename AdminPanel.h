@@ -5,6 +5,7 @@
 #include "AddVehicle.h"
 #include "RemoveTransport.h"
 #include "ViewApplications.h"
+#include "GenerateReport.h"
 
 
 
@@ -50,7 +51,8 @@ public:
                 VA.view();
             }
             else if(selection==5){
-                
+                GenerateReport GR;
+                GR.generate();
             }
             else if(selection==6){
                 
